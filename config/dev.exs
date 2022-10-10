@@ -3,7 +3,7 @@ import Config
 # Configure your database
 config :hello, Hello.Repo,
   username: "postgres",
-  password: "adMin#12",
+  password: "postgres",
   hostname: "localhost",
   database: "hello_dev",
   stacktrace: true,
