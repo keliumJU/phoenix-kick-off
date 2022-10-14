@@ -1,0 +1,25 @@
+<section>
+    <h2>Hello World, from <%= @messenger%>!</h2>
+    
+    <!--example conditional-->
+    <%= if @messenger =="Joe" do%>
+        <p>It's been a long time, since the last time we saw each other Joe >:)</p>
+    <% else %>
+        <p>You're not Joe!, I was expecting Joe!!</p>
+    <% end %>
+    <!--even loop example-->
+    <h4>This is a simple example of loop, don't pay attention to me</h4>
+    <table>
+    <tr>
+        <th>Number</th> 
+        <th>Power</th> 
+    </tr>
+    <%= for number <- 1..10 do %>
+        <tr>
+            <!--All expressions that output something to the template must use the equals(=) sing-->
+            <td><%= number %></td>
+            <td><%= number*number %></td>
+        </tr>
+    <% end %>
+    </table>
+</section>
